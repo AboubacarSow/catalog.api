@@ -1,7 +1,6 @@
 using catalog.api.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
 namespace catalog.api.Data.EFCore.Configuration;
 
@@ -12,7 +11,7 @@ public class ProductConfig : IEntityTypeConfiguration<Product>
     {
         builder.HasIndex(p=>p.Name);
         builder.Property(p=>p.Name).IsRequired();
-        builder.Property(p=>p.Price).HasPrecision(3);
+        builder.Property(p=>p.Price).HasPrecision(18,2);
         builder.Property(p=>p.Price).IsRequired();
         builder.Property(p=>p.Description).IsRequired();
 

@@ -1,0 +1,72 @@
+# =========================
+# .NET / Visual Studio
+# =========================
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# =========================
+# Build & publish output
+# =========================
+**/bin/
+**/obj/
+**/out/
+**/publish/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# ASP.NET Core
+# =========================
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Local.json
+
+# =========================
+# Secrets
+# =========================
+secrets.json
+*.pfx
+*.snk
+
+# =========================
+# EF Core
+# =========================
+*.db
+*.db-shm
+*.db-wal
+
+
+# =========================
+# Coverage / test artifacts
+# =========================
+coverage/
+*.coverage
+*.coveragexml
+
+# =========================
+# Misc
+# =========================
+.env
+.env.*
