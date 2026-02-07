@@ -22,7 +22,7 @@ It is intentionally simple and exists purely for **learning and experimentation*
 
 ## 🛠 Tech Stack
 
-- **.NET 8 / ASP.NET Core**
+- **.NET 9 / ASP.NET Core**
 - **HotChocolate (GraphQL)**
 - **Entity Framework Core**
 - **PostgreSQL**
@@ -63,7 +63,7 @@ catalog.api
 
 ### Prerequisites
 
-- .NET SDK 8+
+- .NET SDK 9+
 - PostgreSQL running locally
 
 ---
@@ -73,7 +73,7 @@ catalog.api
 1. Clone the repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/AboubacarSow/catalog.api
 cd catalog.api
 ````
 
@@ -81,7 +81,7 @@ cd catalog.api
 
 ```json
 "ConnectionStrings": {
-  "Database": "Host=localhost;Port=5432;Database=CatalogDb;Username=postgres;Password=postgres"
+  "Database": "Server=localhost;Port=5432;Database=GQCatalogDb;Username=postgres;Password=postgres"
 }
 ```
 
@@ -104,7 +104,7 @@ On startup:
 Open in your browser:
 
 ```
-http://localhost:<port>/graphql
+http://localhost:5096/graphql
 ```
 
 Example query:
